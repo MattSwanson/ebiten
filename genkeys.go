@@ -375,7 +375,7 @@ package ebiten
 import (
 	"strings"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 // A Key represents a keyboard key.
@@ -459,7 +459,7 @@ const eventKeysTmpl = `{{.License}}
 package event
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 type Key = driver.Key
@@ -479,8 +479,8 @@ const uidriverGlfwKeysTmpl = `{{.License}}
 package glfw
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/glfw"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/glfw"
 )
 
 var glfwKeyToDriverKey = map[glfw.Key]driver.Key{
@@ -505,7 +505,7 @@ package js
 import (
 	"syscall/js"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 var driverKeyToJSKey = map[driver.Key]js.Value{
@@ -542,7 +542,7 @@ const mobileAndroidKeysTmpl = `{{.License}}
 package ebitenmobileview
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 var androidKeyToDriverKey = map[int]driver.Key{
@@ -562,7 +562,7 @@ package mobile
 import (
 	"golang.org/x/mobile/event/key"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 var gbuildKeyToDriverKey = map[key.Code]driver.Key{

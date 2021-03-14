@@ -80,6 +80,7 @@ const (
 	ContextVersionMinor    = Hint(0x00022003)
 	Decorated              = Hint(0x00020005)
 	Floating               = Hint(0x00020007)
+	MousePassThru          = Hint(0x0002000D)
 	Focused                = Hint(0x00020001)
 	FocusOnShow            = Hint(0x0002000C)
 	Iconified              = Hint(0x00020002)

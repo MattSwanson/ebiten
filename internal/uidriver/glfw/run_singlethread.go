@@ -20,9 +20,9 @@
 package glfw
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicscommand"
-	"github.com/hajimehoshi/ebiten/v2/internal/thread"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicscommand"
+	"github.com/MattSwanson/ebiten/v2/internal/thread"
 )
 
 func (u *UserInterface) Run(uicontext driver.UIContext) error {

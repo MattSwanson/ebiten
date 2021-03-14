@@ -19,8 +19,8 @@ package main
 import (
 	"log"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/examples/2048/2048"
+	"github.com/MattSwanson/ebiten/v2"
+	twenty48 "github.com/MattSwanson/ebiten/v2/examples/2048/2048"
 )
 
 func main() {

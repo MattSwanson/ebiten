@@ -22,8 +22,8 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/vector/internal/triangulate"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/vector/internal/triangulate"
 )
 
 var (

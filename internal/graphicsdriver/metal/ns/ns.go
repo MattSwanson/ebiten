@@ -24,7 +24,7 @@ package ns
 import (
 	"unsafe"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/metal/ca"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/metal/ca"
 )
 
 // #cgo !ios CFLAGS: -mmacosx-version-min=10.12

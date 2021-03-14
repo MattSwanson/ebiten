@@ -29,9 +29,9 @@ import (
 	"runtime"
 	"sync/atomic"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/internal/restorable"
-	"github.com/hajimehoshi/ebiten/v2/internal/uidriver/mobile"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/internal/restorable"
+	"github.com/MattSwanson/ebiten/v2/internal/uidriver/mobile"
 )
 
 var theState state

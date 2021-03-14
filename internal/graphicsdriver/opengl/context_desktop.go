@@ -22,9 +22,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/opengl/gl"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/opengl/gl"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
 )
 
 type (

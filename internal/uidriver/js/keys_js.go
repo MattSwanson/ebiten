@@ -19,7 +19,7 @@ package js
 import (
 	"syscall/js"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 var driverKeyToJSKey = map[driver.Key]js.Value{

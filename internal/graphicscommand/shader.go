@@ -15,8 +15,8 @@
 package graphicscommand
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
 )
 
 type Shader struct {

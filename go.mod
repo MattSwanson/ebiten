@@ -1,4 +1,4 @@
-module github.com/hajimehoshi/ebiten/v2
+module github.com/MattSwanson/ebiten/v2
 
 go 1.13
 

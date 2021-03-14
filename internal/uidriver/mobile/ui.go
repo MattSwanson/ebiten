@@ -31,13 +31,13 @@ import (
 	"golang.org/x/mobile/event/touch"
 	"golang.org/x/mobile/gl"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/devicescale"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicscommand"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/opengl"
-	"github.com/hajimehoshi/ebiten/v2/internal/hooks"
-	"github.com/hajimehoshi/ebiten/v2/internal/restorable"
-	"github.com/hajimehoshi/ebiten/v2/internal/thread"
+	"github.com/MattSwanson/ebiten/v2/internal/devicescale"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicscommand"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/opengl"
+	"github.com/MattSwanson/ebiten/v2/internal/hooks"
+	"github.com/MattSwanson/ebiten/v2/internal/restorable"
+	"github.com/MattSwanson/ebiten/v2/internal/thread"
 )
 
 var (

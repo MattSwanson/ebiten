@@ -17,8 +17,8 @@ package testing
 import (
 	"go/constant"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
 )
 
 var (

@@ -15,7 +15,7 @@
 package ebiten
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicscommand"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicscommand"
 )
 
 var _ = __EBITEN_REQUIRES_GO_VERSION_1_13_OR_LATER__

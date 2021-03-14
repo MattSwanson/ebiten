@@ -27,10 +27,10 @@ import (
 	"log"
 	"math"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
-	"github.com/hajimehoshi/ebiten/v2/examples/resources/images"
-	"github.com/hajimehoshi/ebiten/v2/inpututil"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/ebitenutil"
+	"github.com/MattSwanson/ebiten/v2/examples/resources/images"
+	"github.com/MattSwanson/ebiten/v2/inpututil"
 )
 
 const (

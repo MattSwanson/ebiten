@@ -19,10 +19,10 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	. "github.com/hajimehoshi/ebiten/v2/internal/restorable"
-	t "github.com/hajimehoshi/ebiten/v2/internal/testing"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	. "github.com/MattSwanson/ebiten/v2/internal/restorable"
+	t "github.com/MattSwanson/ebiten/v2/internal/testing"
 )
 
 func TestMain(m *testing.M) {

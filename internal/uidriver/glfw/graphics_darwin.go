@@ -33,10 +33,10 @@ package glfw
 import "C"
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/metal"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/metal/mtl"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/opengl"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/metal"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/metal/mtl"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/opengl"
 )
 
 var graphics driver.Graphics

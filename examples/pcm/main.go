@@ -21,9 +21,9 @@ import (
 	"math"
 	"strings"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/audio"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/audio"
+	"github.com/MattSwanson/ebiten/v2/ebitenutil"
 )
 
 const (

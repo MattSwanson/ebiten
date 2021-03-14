@@ -19,7 +19,7 @@
 package opengl
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir/glsl"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir/glsl"
 )
 
 func glslVersion() glsl.GLSLVersion {

@@ -15,7 +15,7 @@
 package ebiten
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 // A MouseButton represents a mouse button.

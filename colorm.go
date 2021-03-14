@@ -19,7 +19,7 @@ import (
 
 	"image/color"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/affine"
+	"github.com/MattSwanson/ebiten/v2/internal/affine"
 )
 
 // ColorMDim is a dimension of a ColorM.

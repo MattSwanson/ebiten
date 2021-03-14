@@ -18,12 +18,12 @@ import (
 	"syscall/js"
 	"time"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/devicescale"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/opengl"
-	"github.com/hajimehoshi/ebiten/v2/internal/hooks"
-	"github.com/hajimehoshi/ebiten/v2/internal/jsutil"
-	"github.com/hajimehoshi/ebiten/v2/internal/restorable"
+	"github.com/MattSwanson/ebiten/v2/internal/devicescale"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/opengl"
+	"github.com/MattSwanson/ebiten/v2/internal/hooks"
+	"github.com/MattSwanson/ebiten/v2/internal/jsutil"
+	"github.com/MattSwanson/ebiten/v2/internal/restorable"
 )
 
 var (

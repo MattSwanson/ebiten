@@ -20,11 +20,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/buffered"
-	"github.com/hajimehoshi/ebiten/v2/internal/clock"
-	"github.com/hajimehoshi/ebiten/v2/internal/debug"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/hooks"
+	"github.com/MattSwanson/ebiten/v2/internal/buffered"
+	"github.com/MattSwanson/ebiten/v2/internal/clock"
+	"github.com/MattSwanson/ebiten/v2/internal/debug"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/hooks"
 )
 
 type uiContext struct {

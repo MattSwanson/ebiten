@@ -54,6 +54,9 @@ type UI interface {
 	IsVsyncEnabled() bool
 	SetVsyncEnabled(enabled bool)
 
+	IsMousePassThru() bool
+	SetMousePassThru(passThru bool)
+
 	IsScreenTransparent() bool
 	SetScreenTransparent(transparent bool)
 	SetInitFocused(focused bool)

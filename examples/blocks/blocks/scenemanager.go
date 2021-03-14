@@ -15,7 +15,7 @@
 package blocks
 
 import (
-	"github.com/hajimehoshi/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2"
 )
 
 var (

@@ -19,7 +19,7 @@ package opengl
 import (
 	"golang.org/x/mobile/gl"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/opengl/gles"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/opengl/gles"
 )
 
 func init() {

@@ -17,9 +17,9 @@ package driver
 import (
 	"errors"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/affine"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/affine"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
 )
 
 type Region struct {

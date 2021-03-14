@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/hooks"
+	"github.com/MattSwanson/ebiten/v2/internal/hooks"
 )
 
 // writerDriver represents a driver using io.WriteClosers.

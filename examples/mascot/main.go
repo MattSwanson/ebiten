@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	rmascot "github.com/hajimehoshi/ebiten/v2/examples/resources/images/mascot"
+	"github.com/MattSwanson/ebiten/v2"
+	rmascot "github.com/MattSwanson/ebiten/v2/examples/resources/images/mascot"
 )
 
 const (

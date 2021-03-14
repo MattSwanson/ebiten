@@ -25,10 +25,10 @@ import (
 	"runtime"
 	"testing"
 
-	. "github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/examples/resources/images"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	t "github.com/hajimehoshi/ebiten/v2/internal/testing"
+	. "github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/examples/resources/images"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	t "github.com/MattSwanson/ebiten/v2/internal/testing"
 )
 
 func skipTooSlowTests(t *testing.T) bool {

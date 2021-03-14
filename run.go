@@ -17,8 +17,8 @@ package ebiten
 import (
 	"sync/atomic"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/clock"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/clock"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 // Game defines necessary functions for a game.
@@ -241,6 +241,14 @@ func SetCursorMode(mode CursorModeType) {
 // IsFullscreen is concurrent-safe.
 func IsFullscreen() bool {
 	return uiDriver().IsFullscreen()
+}
+
+func IsMousePassThru() bool {
+	return uiDriver().IsMousePassThru()
+}
+
+func SetMousePassThru(passthru bool) {
+	uiDriver().SetMousePassThru(passthru)
 }
 
 // SetFullscreen changes the current mode to fullscreen or not on desktops.

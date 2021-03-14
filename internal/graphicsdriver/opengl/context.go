@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 type operation int

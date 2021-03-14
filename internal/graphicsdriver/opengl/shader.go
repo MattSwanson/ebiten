@@ -17,9 +17,9 @@ package opengl
 import (
 	"fmt"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir/glsl"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir/glsl"
 )
 
 type Shader struct {

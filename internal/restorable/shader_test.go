@@ -18,10 +18,10 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	. "github.com/hajimehoshi/ebiten/v2/internal/restorable"
-	etesting "github.com/hajimehoshi/ebiten/v2/internal/testing"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	. "github.com/MattSwanson/ebiten/v2/internal/restorable"
+	etesting "github.com/MattSwanson/ebiten/v2/internal/testing"
 )
 
 var emptyImage = NewImage(3, 3)

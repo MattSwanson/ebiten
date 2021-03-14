@@ -22,8 +22,8 @@ import (
 	_ "image/jpeg"
 	"log"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/examples/resources/images"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/examples/resources/images"
 )
 
 const (

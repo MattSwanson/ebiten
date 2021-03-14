@@ -1204,6 +1204,13 @@ static LRESULT CALLBACK windowProc(HWND hWnd, UINT uMsg,
             DragFinish(drop);
             return 0;
         }
+
+        // case WM_NCHITTEST:
+        // {
+        //     if(window->mousePassthru)
+        //         return HTTRANSPARENT;
+        //     break;
+        // }
     }
 
     return DefWindowProcW(hWnd, uMsg, wParam, lParam);
@@ -1872,6 +1879,36 @@ void _glfwPlatformSetWindowFloating(_GLFWwindow* window, GLFWbool enabled)
                  SWP_NOACTIVATE | SWP_NOMOVE | SWP_NOSIZE);
 }
 
+void _glfwPlatformSetWindowMousePassthru(_GLFWwindow* window, GLFWbool enabled)
+{
+    COLORREF key = 0;
+    BYTE alpha = 0;
+    DWORD flags = 0;
+    DWORD exStyle = GetWindowLongW(window->win32.handle, GWL_EXSTYLE);
+
+    if(exStyle & WS_EX_LAYERED)
+        GetLayeredWindowAttributes(window->win32.handle, &key, &alpha, &flags);
+
+    if(enabled)
+        exStyle |= (WS_EX_TRANSPARENT | WS_EX_LAYERED);
+    else
+    {
+        exStyle &= ~WS_EX_TRANSPARENT;
+        if (exStyle & WS_EX_LAYERED)
+        {
+            if (!(flags & LWA_ALPHA)) 
+            {
+                exStyle &= ~WS_EX_LAYERED;
+            }
+        }
+    }
+
+    SetWindowLongW(window->win32.handle, GWL_EXSTYLE, exStyle);
+
+    if (enabled)
+        SetLayeredWindowAttributes(window->win32.handle, key, alpha, flags);
+}
+
 float _glfwPlatformGetWindowOpacity(_GLFWwindow* window)
 {
     BYTE alpha;
@@ -1889,19 +1926,28 @@ float _glfwPlatformGetWindowOpacity(_GLFWwindow* window)
 
 void _glfwPlatformSetWindowOpacity(_GLFWwindow* window, float opacity)
 {
-    if (opacity < 1.f)
+    LONG exStyle = GetWindowLongW(window->win32.handle, GWL_EXSTYLE);
+    if (opacity < 1.f || (exStyle & WS_EX_TRANSPARENT))
     {
         const BYTE alpha = (BYTE) (255 * opacity);
-        DWORD style = GetWindowLongW(window->win32.handle, GWL_EXSTYLE);
-        style |= WS_EX_LAYERED;
-        SetWindowLongW(window->win32.handle, GWL_EXSTYLE, style);
+        exStyle |= WS_EX_LAYERED;
+        SetWindowLongW(window->win32.handle, GWL_EXSTYLE, exStyle);
+        // DWORD style = GetWindowLongW(window->win32.handle, GWL_EXSTYLE);
+        // style |= WS_EX_LAYERED;
+        // SetWindowLongW(window->win32.handle, GWL_EXSTYLE, style);
         SetLayeredWindowAttributes(window->win32.handle, 0, alpha, LWA_ALPHA);
+    }
+    else if (exStyle & WS_EX_TRANSPARENT)
+    {
+        SetLayeredWindowAttributes(window->win32.handle, 0, 0, 0);
     }
     else
     {
-        DWORD style = GetWindowLongW(window->win32.handle, GWL_EXSTYLE);
-        style &= ~WS_EX_LAYERED;
-        SetWindowLongW(window->win32.handle, GWL_EXSTYLE, style);
+        exStyle &= ~WS_EX_LAYERED;
+        SetWindowLongW(window->win32.handle, GWL_EXSTYLE, exStyle);
+        // DWORD style = GetWindowLongW(window->win32.handle, GWL_EXSTYLE);
+        // style &= ~WS_EX_LAYERED;
+        // SetWindowLongW(window->win32.handle, GWL_EXSTYLE, style);
     }
 }
 

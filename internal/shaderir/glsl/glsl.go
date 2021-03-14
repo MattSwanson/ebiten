@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
 )
 
 type GLSLVersion int

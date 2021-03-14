@@ -19,11 +19,11 @@ import (
 	"fmt"
 	"syscall/js"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/opengl/gles"
-	"github.com/hajimehoshi/ebiten/v2/internal/jsutil"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
-	"github.com/hajimehoshi/ebiten/v2/internal/web"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/opengl/gles"
+	"github.com/MattSwanson/ebiten/v2/internal/jsutil"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/web"
 )
 
 type (

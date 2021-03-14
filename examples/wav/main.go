@@ -20,12 +20,12 @@ import (
 	"bytes"
 	"log"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/audio"
-	"github.com/hajimehoshi/ebiten/v2/audio/wav"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
-	raudio "github.com/hajimehoshi/ebiten/v2/examples/resources/audio"
-	"github.com/hajimehoshi/ebiten/v2/inpututil"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/audio"
+	"github.com/MattSwanson/ebiten/v2/audio/wav"
+	"github.com/MattSwanson/ebiten/v2/ebitenutil"
+	raudio "github.com/MattSwanson/ebiten/v2/examples/resources/audio"
+	"github.com/MattSwanson/ebiten/v2/inpututil"
 )
 
 const (

@@ -21,7 +21,7 @@ package glfw
 import (
 	"image"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/glfw"
+	"github.com/MattSwanson/ebiten/v2/internal/glfw"
 )
 
 type window struct {

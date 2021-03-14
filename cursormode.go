@@ -14,7 +14,7 @@
 
 package ebiten
 
-import "github.com/hajimehoshi/ebiten/v2/internal/driver"
+import "github.com/MattSwanson/ebiten/v2/internal/driver"
 
 // CursorModeType represents
 // a render and coordinate mode of a mouse cursor.

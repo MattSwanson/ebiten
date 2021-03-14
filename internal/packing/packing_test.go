@@ -17,7 +17,7 @@ package packing_test
 import (
 	"testing"
 
-	. "github.com/hajimehoshi/ebiten/v2/internal/packing"
+	. "github.com/MattSwanson/ebiten/v2/internal/packing"
 )
 
 func TestPage(t *testing.T) {

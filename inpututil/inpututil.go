@@ -19,8 +19,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/internal/hooks"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/internal/hooks"
 )
 
 type inputState struct {

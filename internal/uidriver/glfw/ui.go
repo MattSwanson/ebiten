@@ -27,11 +27,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/devicescale"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/glfw"
-	"github.com/hajimehoshi/ebiten/v2/internal/hooks"
-	"github.com/hajimehoshi/ebiten/v2/internal/thread"
+	"github.com/MattSwanson/ebiten/v2/internal/devicescale"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/glfw"
+	"github.com/MattSwanson/ebiten/v2/internal/hooks"
+	"github.com/MattSwanson/ebiten/v2/internal/thread"
 )
 
 type UserInterface struct {
@@ -74,6 +74,7 @@ type UserInterface struct {
 	initWindowWidthInDP     int
 	initWindowHeightInDP    int
 	initWindowFloating      bool
+	initMousePassThru       bool
 	initWindowMaximized     bool
 	initScreenTransparent   bool
 	initFocused             bool
@@ -363,6 +364,19 @@ func (u *UserInterface) isInitWindowFloating() bool {
 func (u *UserInterface) setInitWindowFloating(floating bool) {
 	u.m.Lock()
 	u.initWindowFloating = floating
+	u.m.Unlock()
+}
+
+func (u *UserInterface) isInitMousePassThru() bool {
+	u.m.Lock()
+	f := u.initMousePassThru
+	u.m.Unlock()
+	return f
+}
+
+func (u *UserInterface) setInitMousePassThru(passThru bool) {
+	u.m.Lock()
+	u.initMousePassThru = passThru
 	u.m.Unlock()
 }
 
@@ -706,6 +720,12 @@ func (u *UserInterface) init() error {
 		floating = glfw.True
 	}
 	glfw.WindowHint(glfw.Floating, floating)
+
+	passThru := glfw.False
+	if u.isInitMousePassThru() {
+		passThru = glfw.True
+	}
+	glfw.WindowHint(glfw.MousePassThru, passThru)
 
 	focused := glfw.False
 	if u.isInitFocused() {
@@ -1108,6 +1128,33 @@ func currentMonitor(window *glfw.Window) *glfw.Monitor {
 		return m.m
 	}
 	return glfw.GetPrimaryMonitor()
+}
+
+func (u *UserInterface) IsMousePassThru() bool {
+	if !u.isRunning() {
+		return u.isInitMousePassThru()
+	}
+	var v bool
+	_ = u.t.Call(func() error {
+		v = u.window.GetAttrib(glfw.MousePassThru) == glfw.True
+		return nil
+	})
+	return v
+}
+
+func (u *UserInterface) SetMousePassThru(passThru bool) {
+	if !u.isRunning() {
+		u.setInitMousePassThru(passThru)
+		return
+	}
+	_ = u.t.Call(func() error {
+		v := glfw.False
+		if passThru {
+			v = glfw.True
+		}
+		u.window.SetAttrib(glfw.MousePassThru, v)
+		return nil
+	})
 }
 
 func (u *UserInterface) SetScreenTransparent(transparent bool) {

@@ -22,11 +22,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/audio"
-	"github.com/hajimehoshi/ebiten/v2/audio/vorbis"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
-	raudio "github.com/hajimehoshi/ebiten/v2/examples/resources/audio"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/audio"
+	"github.com/MattSwanson/ebiten/v2/audio/vorbis"
+	"github.com/MattSwanson/ebiten/v2/ebitenutil"
+	raudio "github.com/MattSwanson/ebiten/v2/examples/resources/audio"
 )
 
 const (

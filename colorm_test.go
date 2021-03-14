@@ -19,7 +19,7 @@ import (
 	"math"
 	"testing"
 
-	. "github.com/hajimehoshi/ebiten/v2"
+	. "github.com/MattSwanson/ebiten/v2"
 )
 
 func TestColorMInit(t *testing.T) {

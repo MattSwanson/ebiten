@@ -19,7 +19,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 // glslReservedKeywords is a set of reserved keywords that cannot be used as an indentifier on some environments.

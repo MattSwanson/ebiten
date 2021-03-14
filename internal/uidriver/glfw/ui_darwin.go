@@ -41,7 +41,7 @@ package glfw
 import "C"
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/glfw"
+	"github.com/MattSwanson/ebiten/v2/internal/glfw"
 )
 
 func fromGLFWMonitorPixel(x float64, deviceScale float64) float64 {

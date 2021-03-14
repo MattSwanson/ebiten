@@ -20,10 +20,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/affine"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	"github.com/hajimehoshi/ebiten/v2/internal/png"
+	"github.com/MattSwanson/ebiten/v2/internal/affine"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	"github.com/MattSwanson/ebiten/v2/internal/png"
 )
 
 // Image represents an image that is implemented with OpenGL.

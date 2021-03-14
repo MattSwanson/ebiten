@@ -17,7 +17,7 @@
 package ebitenmobileview
 
 import (
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
 )
 
 var androidKeyToDriverKey = map[int]driver.Key{

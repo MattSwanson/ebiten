@@ -22,12 +22,12 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/hajimehoshi/ebiten/v2/internal/affine"
-	"github.com/hajimehoshi/ebiten/v2/internal/driver"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphics"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/metal/ca"
-	"github.com/hajimehoshi/ebiten/v2/internal/graphicsdriver/metal/mtl"
-	"github.com/hajimehoshi/ebiten/v2/internal/shaderir"
+	"github.com/MattSwanson/ebiten/v2/internal/affine"
+	"github.com/MattSwanson/ebiten/v2/internal/driver"
+	"github.com/MattSwanson/ebiten/v2/internal/graphics"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/metal/ca"
+	"github.com/MattSwanson/ebiten/v2/internal/graphicsdriver/metal/mtl"
+	"github.com/MattSwanson/ebiten/v2/internal/shaderir"
 )
 
 // #cgo CFLAGS: -x objective-c
