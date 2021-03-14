@@ -25,9 +25,9 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/hajimehoshi/ebiten/v2"
-	"github.com/hajimehoshi/ebiten/v2/ebitenutil"
-	"github.com/hajimehoshi/ebiten/v2/examples/resources/images"
+	"github.com/MattSwanson/ebiten/v2"
+	"github.com/MattSwanson/ebiten/v2/ebitenutil"
+	"github.com/MattSwanson/ebiten/v2/examples/resources/images"
 )
 
 const (
@@ -194,7 +194,7 @@ func (g *Game) Draw(screen *ebiten.Image) {
 	// the actual draw call to GPU is very few since these calls satisfy
 	// some conditions e.g. all the rendering sources and targets are same.
 	// For more detail, see:
-	// https://pkg.go.dev/github.com/hajimehoshi/ebiten/v2#Image.DrawImage
+	// https://pkg.go.dev/github.com/MattSwanson/ebiten/v2#Image.DrawImage
 	w, h := ebitenImage.Size()
 	for i := 0; i < g.sprites.num; i++ {
 		s := g.sprites.sprites[i]
@@ -217,8 +217,12 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
 }
 
 func main() {
+	ebiten.SetMousePassThru(true)
 	ebiten.SetWindowSize(screenWidth*2, screenHeight*2)
 	ebiten.SetWindowTitle("Sprites (Ebiten Demo)")
+	ebiten.SetScreenTransparent(true)
+	ebiten.SetWindowFloating(true)
+	ebiten.SetWindowDecorated(false)
 	if err := ebiten.RunGame(&Game{}); err != nil {
 		log.Fatal(err)
 	}
